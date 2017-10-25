@@ -7,5 +7,6 @@ conda skeleton pypi $PACKAGE
 conda convert $CONDA_DIR/conda-bld/osx-64/$PACKAGE-$VERSION*.tar.bz2 -o $CONDA_DIR/conda-bld/ --platform all
 anaconda upload $CONDA_DIR/conda-bld/*/$PACKAGE-$VERSION*.tar.bz2
 conda build $PACKAGE --no-anaconda-upload
+anaconda upload $CONDA_DIR/conda-bld/osx-64/$PACKAGE-$VERSION*.tar.bz2 --all
 
 rm -r $PACKAGE
