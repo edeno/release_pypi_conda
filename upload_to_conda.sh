@@ -9,3 +9,4 @@ conda convert $CONDA_DIR/conda-bld/osx-64/$PACKAGE-$VERSION*.tar.bz2 -o $CONDA_D
 anaconda upload $CONDA_DIR/conda-bld/*/$PACKAGE-$VERSION*.tar.bz2 --force
 
 rm -r $PACKAGE
+conda build purge
