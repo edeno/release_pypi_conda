@@ -20,4 +20,4 @@ conda convert $CONDA_DIR/conda-bld/$OS/$PACKAGE-$VERSION*.tar.bz2 -o $CONDA_DIR/
 anaconda upload $CONDA_DIR/conda-bld/*/$PACKAGE-$VERSION*.tar.bz2 -u $USER
 
 rm -r $PACKAGE
-conda build purge
+conda build purge-all
