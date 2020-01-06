@@ -1,0 +1,10 @@
+name: release_pypi_conda
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python
+- conda-verify
+- conda_build
+- anaconda-client
+- twine
