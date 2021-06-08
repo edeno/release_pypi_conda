@@ -3,7 +3,6 @@ CONDA_DIR=~/miniconda3
 PACKAGE=$1
 VERSION=$2
 USER=${3:-edeno}
-OS=${4:-osx-64}
 
 conda skeleton pypi $PACKAGE --version $VERSION --noarch-python
 
